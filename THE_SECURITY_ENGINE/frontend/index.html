@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Engine</title>
+<link href="style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="body1">
+
+
+    <h1><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  TSE THE__SECURITY__ENGINE🔑</h1>
+
+<div id="mynav">
+<p><a href="index.html" style="text-decoration:none;">REGISTRATION PROCESS</a></p>
+<p><a href="validate.html">CODE VALIDATION</a></p>
+</div>
+
+<div id="body">
+<h2>Let's get you registered!</h2>
+    <form id="encryptForm">
+        <label for="firstName"><b>First Name:</b></label><br>
+        <input type="text" id="fName" name="firstName" required><br><br>
+
+        <label for="lastName"><b>Last Name:</b></label><br>
+        <input type="text" id="lName" name="lastName" required><br><br>
+
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+   <label for="number"><b>Phone No:</b></label><br>
+        <input type="number" id="number" name="number" required><br><br>
+
+        <label id="dob1" for="dob1"><b>Date of Birth:</b></label><br>
+        <input type="text" id="dob" name="dob" placeholder="yyyy/mm/dd" required><br><br>
+
+
+   <label for="country"><b>Country:</b></label><br>
+        <input type="text" id="country" name="country" required><br><br>
+
+
+        
+        <button type="submit">Generate</button>
+    </form>
+
+
+    <!-- Section to display the result -->
+    <div id="result">
+<div id="result1">
+        <h2>Generated Keys</h2>
+        <p><strong>Encrypted Data:</strong> <span id="encryptedData"></span></p>
+        <p><strong>Initialization Vector (IV):</strong> <span id="iv"></span></p>
+</div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

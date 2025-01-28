@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Encrypted Code</title>
+    <link href="style1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>Validation Page</h1>
+    <div id="mynav">
+        <p><a href="index.html">REGISTRATION PROCESS</p>
+        <p><a href="validate.html">CODE VALIDATION</a></p>
+    </div>
+    <p>Enter the encrypted data and IV to validate and decrypt the information.</p>
+
+    <form id="validateForm">
+        <label for="encryptedDataInput">Encrypted Data:</label>
+        <input type="text" id="encryptedDataInput" placeholder="Paste the encrypted data here" required>
+
+        <label for="ivInput">Initialization Vector (IV):</label>
+        <input type="text" id="ivInput" placeholder="Paste the IV here" required>
+
+        <button type="submit">Validate & Decrypt</button>
+    </form>
+
+    <div id="virtualIDCard">
+        <!-- The decrypted virtual ID card will be displayed here -->
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+            font-family: Arial, sans-serif;
+            margin-top: 80px;
+            padding: 0;
+background-color:#4d5c5e;
+        }
+
+ h1 {
+text-align:center;
+font-size:20px;
+border:1px solid yellow;
+border-width:1px 3px 1px 3px;
+padding:16px 13px 15px 9px;
+border-radius:10px 6px;
+background-color:#ffffdb;
+position:fixed;
+top:-15px;
+box-shadow:1px 1px 1px 1px #d9e6bf;
+         
+        }
+
+.icon{
+font-size:15px;
+color: #4d5c5e;
+border:1px solid white;
+position:fixed;
+top:34px;
+
+}
+#mynav{
+display:none;
+margin-top:-20px;
+text-decoration:none;
+}
+
+#mynav > p > a:link{
+text-decoration:none;
+color:#babad1;
+}
+
+form {
+     margin-bottom: 20px;
+      padding: 10px;
+       border: 1px solid #ccc;
+          border-radius: 5px;
+            max-width: 400px;
+background-color:#f2ffff;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input {
+width:80%;
+font-size:15px;
+            border:1px #a8c9db solid;
+border-radius:10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #virtualIDCard {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 400px;
+            background-color: #f9f9f9;
+        }
