@@ -1,3 +1,3 @@
 PROJECT X
 Loading.....
-opened uo by Git.Git
+opened up by Git.Git
