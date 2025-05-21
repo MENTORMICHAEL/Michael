@@ -9,24 +9,97 @@ margin-right:35px;
 margin-left:35px;
 background-color:#f2ffff;
 box-shadow: 1px 0px 4px 2px;
+z-index: -20;
 }
 
-.icon{
-font-size:15px;
-color: #4d5c5e;
-border:1px solid white;
+
+
+
+.myNav{
 position:fixed;
-top:34px;
+margin-left:10px;
+margin-top:8px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 18px;
+height: 15px;
+cursor: pointer;
+z-index:10;
+}
 
+.myNav.active .bar:nth-child(1) {
+  transform: translateY(2px) rotate(45deg);
 }
-#mynav{
-padding-top:45px;
-display:none;
+
+.myNav.active .bar:nth-child(2) {
+  opacity: 0;
 }
-#mynav > p > a:link{
-color:#babad1;
-text-decoration:none;
+
+.myNav.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
 }
+
+
+
+
+
+
+.bar{
+width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.menu {
+
+  position: absolute;
+  top: 60px; /* Adjust based on your header height */
+  left: 0;
+  width: 50%;
+  background-color: #333; /* Example menu background */
+  color: white;
+  padding: 0 10px; /* Adjust padding as needed */
+  overflow: hidden; /* Important for the max-height transition */
+  max-height: 0; /* Initially hidden */
+  transition: max-height 0.3s ease-in-out; /* Add the transition here */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 8px;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+
+
+
+
+.menu.open {
+position:fixed;
+  max-height: 500px; /* Or a sufficiently large value to accommodate your menu */
+  padding-top: 10px; /* add  padding when open */
+
+  padding-bottom: 10px; /* Add padding when open */
+
+margin-top:-5px;
+margin-left: 7px;
+}
+
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+text-align: left;
+}
+
+
+
+
+
+
 
 #body1 {
 
@@ -46,6 +119,7 @@ background-color:#ffffdb;
 position:fixed;
 top:-15px;
 box-shadow:1px 1px 1px 1px #d9e6bf;
+z-index: 0;
 }
 
 h2{

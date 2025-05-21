@@ -111,8 +111,16 @@ console.log("Decrypted Data:", decryptedData);
     }
 });
 
-// Navbar Toggle
-function myFunction() {
-    const x = document.getElementById('mynav');
-    x.style.display = x.style.display === 'block' ? 'none' : 'block';
-}
+
+
+
+
+
+
+const myNav= document.querySelector('.myNav');
+  const menu = document.querySelector('.menu');
+
+  myNav.addEventListener('click', () => {
+    myNav.classList.toggle('active');
+    menu.classList.toggle('open');
+  });
